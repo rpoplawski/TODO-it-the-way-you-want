@@ -77,6 +77,13 @@ This folder structure should be suitable for starting a project that uses a data
 
 
 4)Who lives at “6439 Zetta Hills, Willmouth, WY”? Do they have another address?
+[1] pry(main)> User.find_by(id: 40) 
+=> #<User:0x007fafdb154dd8
+ id: 40,
+ first_name: "Corrine",
+ last_name: "Little",
+ email: "rubie_kovacek@grimes.net">
+
 [1] pry(main)> Address.find_by(street: "6439 Zetta Hills")
 => #<Address:0x007ff244a27428
  id: 43,
@@ -85,6 +92,15 @@ This folder structure should be suitable for starting a project that uses a data
  city: "Willmouth",
  state: "WY",
  zip: 15029>
+
+[2] pry(main)> Address.all.find_by(id: 44)
+=> #<Address:0x007f87d510bd78
+ id: 44,
+ user_id: 40,
+ street: "54369 Wolff Forges",
+ city: "Lake Bryon",
+ state: "CA",
+ zip: 31587>
 
 
 5)Correct Virginie Mitchell’s address to “New York, NY, 10108”.
