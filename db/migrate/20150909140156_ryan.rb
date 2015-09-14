@@ -1,9 +1,9 @@
-class Ryan < ActiveRecord::Migration
+class Create_Todos < ActiveRecord::Migration
   def change
-  create_table   :todos do |t|
-      t.string   :name
-      t.string   :tasks
-      t.boolean  :completion_level
+    create_table   :todos do |t|
+        t.string   :name
+        t.string   :tasks
+        t.boolean  :completion_level
     end
   end
 end
