@@ -1,6 +1,6 @@
 development:
   adapter: sqlite3
-  database: db/store.sqlite3
+  database: db/todo.sqlite3
   pool: 5
   timeout: 1000
 test:

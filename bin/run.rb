@@ -1,8 +1,10 @@
-class Run
-  def instuctions(todo)
-    @get_name = get_name
+require_relative "../db/setup"
+require_relative '../lib/all'
 
-get_name.get_task
+todo_list = List.new
 
-get_name.todo_list
-  end
+todo_list.get_tasks
+
+todo_list.display_all_todos
+
+todo_list.remove_todos
